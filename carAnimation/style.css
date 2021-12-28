@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headings{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 140px;
+}
+.headings div{
+  background:peachpuff ;
+  height: 40px;
+  width: 330px;
+  font-weight: bold;
+  border: 3px solid royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sky {
+  background-image: url(img/sky.jpg);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  overflow-x: hidden;
+  /* background-size: cover; */
+  /* overflow-y: hidden; */
+}
+
+.road {
+  background-image: url(img/road.jpg);
+  z-index: 1;
+  height: 200px;
+  width: 5000%;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  /* left: 0px; */
+  /* right: 0px; */
+  animation: highway 10s linear infinite;
+}
+@keyframes highway {
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+
+.city {
+  background-image: url(img/city.png);
+  height: 250px;
+  width: 5000%;
+  display: block;
+  position: absolute;
+  top: 220px;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+@keyframes city {
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+
+.car {
+  width: 400px;
+  /* left: 5%; */
+  bottom: 95px;
+  position: absolute;
+  transform: translateX(80%); 
+  transition: 50s;
+  z-index: 2;
+}
+.car img {
+  width: 200px;
+  animation: car 2s infinite;
+}
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+.wheel {
+  position: absolute;
+  z-index: 2;
+  transform: translateX(80%);
+  transition: 50s;
+}
+.wheel img {
+    width: 38px;
+    position: absolute;
+    animation: wheel  1s linear infinite;
+}
+.front-wheel {
+    bottom: 3.5px;
+    left: 140px;
+}
+.back-wheel {
+    bottom: 3.5px;
+    left: 17px;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.clock{
+  position: relative;
+  margin: auto;
+  height: 17vw;
+  width: 17vw;
+  background: url(img/clock.png) no-repeat;
+  background-size: 100%;
+}
+.hour, .minute, .second{
+  background: black;
+  position: absolute;
+  transform-origin: bottom;
+  border-radius: 20px;
+}
+.hour{
+  width: 2%;
+  height: 25%;
+  top: 25%;
+  left: 48.85%;
+}
+.minute{
+  width: 1.7%;
+  height: 30%;
+  top: 19%;
+  left: 48.9%;
+}
+.second{
+  width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.25%;
+}

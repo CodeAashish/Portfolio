@@ -1,0 +1,209 @@
+/* CSS Reset */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+
+
+/* ------------------Header----------------- */
+.clip-circle{
+    clip-path: circle(40%);
+}
+#logo img{
+    width: 80px;
+    margin: -6px 30px;
+}
+/* Navigation */
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    position: sticky;
+    background-size: cover;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(214, 140, 44);
+    border-radius: 15px;
+}
+#navbar a:hover{
+    background-color: white;
+    color: black;
+}
+#navbar a.active{
+    background-color: white;
+    color: black;
+}
+
+/* ----------- Home Section ---------- */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 18em;
+    color: blanchedalmond;
+    padding: 3px 90px;
+}
+#home h1{
+    padding: 0px 50px;
+}
+#home::before{
+    content: "";
+    background: url(../foodsite/img/fruits-2200001_1920.jpg) center no-repeat;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.99;
+}
+
+
+/* --------Services---------- */
+#services-container{
+    margin-top: 140px;
+}
+#services{
+    display: flex;
+}
+.box{
+    border: 2px solid brown;
+    width: 31%;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 226, 216);
+}
+
+/* Our Clients */
+/* #our-clients img{
+    padding: 2px;
+} */
+.clients-items{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .clients-items1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+#our-clients::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../foodsite/img/pexels-andrea-piacquadio-919436.jpg) center  no-repeat;
+    z-index: -1;
+    /* opacity: 0.; */
+}
+#our-clients h2{
+    padding-top: 100px;
+    color: blanchedalmond;
+}
+
+/* Contact Section */
+#contact{
+    /* margin-top: 50px; */
+    color: bisque;
+    /* height: 70%; */
+}
+#contact-box{
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid orange; */
+}
+#contact input,textarea{
+    font-family: 'Baloo 2', cursive;
+    border-radius: 23px;
+    padding: 6px;
+    margin: 2px;
+    width: 100%;
+    display: block;
+} 
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../foodsite/img/contact-us-4193637_1920.jpg) no-repeat;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+#contact-box form{
+    width: 70%;
+    border: 2px solid rgba(194, 146, 58, 0.658);
+    background: rgb(61, 51, 51, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* Footer */
+.footer{
+    background: black;
+    color: white;
+    font-family: 'Bree serif', serif;
+    margin-top: 75px;
+    padding: 7px 10px;
+}
+
+/* Utility Classes */
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+}
+p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 17px;
+}
+.btn{
+    border-radius: 39px;
+    width: 200px;
+    height: 33px;
+    font-weight: bold;
+    /* opacity: 1; */
+    background-color:black ;
+    color: darkseagreen;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:hover{
+    background-color: rgb(218, 197, 165);
+    color: black;
+}

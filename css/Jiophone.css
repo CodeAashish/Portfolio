@@ -1,0 +1,16 @@
+/* Jio Phone: 240*320 */
+/* From 285 */
+
+/* ------- home ------- */
+#home::before {
+    height: 150% !important;
+    top: 0.1px;
+}
+
+/* Utility Classes */
+.btn{
+    width: 200px;
+    height: 33px;
+    font-size: 0.9em;
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+/* Mobile Resolution: 360*640  */
+/* Ok: 596*640 - 340-1080 */
+/* From decreasing 596*640 problem arrise
+1. logo center and nav below it */
+
+/* body{
+    background-color: brown;
+} */
+
+/* -------- Header ---------- */
+#logo img{
+    width: 70px !important;
+}
+/*  Navigation */
+#navbar{
+   flex-direction: column;
+}
+#navbar a{
+    padding: 1px 9px  !important;
+    font-size: 1em !important;
+}
+
+/* ------- Home Section ------ */
+#home{
+    padding: 1px 40px !important;
+}
+#home::before {
+    top: 0.1px;
+}
+
+/* -------- Services Section ------ */
+#services{
+    flex-direction: column;
+    overflow:auto;
+}
+#services .box{
+    width: 85%;
+    margin-top: 6px ;
+}
+
+/* -------- Clients Section -------- */
+.clients-items{
+    flex-wrap: wrap;
+}
+
+/* -------- Contact us Section -------- */
+#contact-box{
+    font-size: 0.8em !important;
+}
+#contact input,textarea{
+    padding: 3px !important;
+    margin: 0px !important;
+} 
+
+/* ----- Footer ------- */
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 1.3rem !important;
+}
+.h-secondary{
+    font-size: 1rem  !important;
+}
+p{
+    font-size: 14px !important;
+} 
+.btn{
+    width: 130px !important;
+    height: 34px !important;
+    font-size: 0.8em !important;
+}
