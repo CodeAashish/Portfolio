@@ -1,0 +1,24 @@
+/* body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'about about about about'
+    'footer footer footer footer';
+}
+
+header{
+    grid-area: header;
+}
+#about{
+    grid-area: about;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+} */
+
+main{
+    padding: 40px;
+}
