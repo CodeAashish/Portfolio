@@ -1,0 +1,58 @@
+.car-animation{
+    background-image: url(/projects/carAnimation/img/sky.jpg);
+    width: 450px;
+    height: 280px;
+    background-size: 500px;
+    margin: auto;
+}
+
+.highway{
+    background-image: url(/projects/carAnimation/img/road.jpg);
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    top: -65px;
+}
+
+.city{
+    background-image: url(/projects/carAnimation/img/city.png);
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 25px;
+}
+
+.car img{
+    position: relative;
+    z-index: 3;
+    animation: car 2s linear infinite;
+}
+
+.wheelL{
+    top: -23px;
+    position: relative;
+    left: 9px;
+    z-index: 3;
+    animation: car 2s linear infinite;
+}
+.wheelR{
+    top: -45px;
+    left: 70px;
+    position: relative;
+    z-index: 3;
+    animation: car 2s linear infinite;
+}
+
+@keyframes car {
+    100% {
+      transform: translateY(-1px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    0% {
+      transform: translateY(-1px);
+    }
+  }

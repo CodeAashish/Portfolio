@@ -1,0 +1,12 @@
+/* CSS Variales */
+body{
+    --box-color: blue;
+}
+ul{
+    font-size: 20px;
+    color: var(--box-color);
+}
+ol{
+    font-size: 30px;
+    color: var(--box-color);
+}
