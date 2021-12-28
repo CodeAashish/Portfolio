@@ -1,0 +1,15 @@
+/* Page1 */
+.page-1{
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+.intro{
+    width: 50%;
+    height: 76vh;
+    /* background-color: rgb(153, 153, 22); */
+    margin: auto;
+}
+
+.main-text{
+margin-top: 20px;
+}

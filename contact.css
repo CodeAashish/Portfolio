@@ -1,0 +1,18 @@
+form div{
+    padding: 5px;
+}
+form input,textarea,select{
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #383333;
+    width: 400px;
+    padding: 15px;
+    color: #383333;
+}
+.contact{
+    margin-left: 40px;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+.contact-info{
+}

@@ -1,0 +1,41 @@
+.projects{
+    background-color: #0e0e0e;
+    color: #fff;
+    height: 150vh;
+}
+
+
+.login-form{
+    background: url(/img/nature.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 50%;
+}
+
+form{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bg);
+    opacity: 0.8;
+    color: var(--txt);
+    height: 65%;
+    width: 60%;
+}
+
+form div{
+    padding: 10px;
+}
+form div input{
+    background-color: var(--bg);
+    color: var(--txt);
+    border: 0;
+    border-bottom: 1px solid var(--txt);
+}
+.btn{
+    border: 1.5px solid var(--txt);
+    padding: 2px 40px;
+    margin-top: 8px;
+    background-color: var(--bg);
+    color: var(--txt);
+}

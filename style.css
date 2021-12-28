@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #0e0e0e; */
+    /* color: #fff; */
+    --txt: #fff;
+    --bg: #0e0e0e;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footer{
+    background-color: #0e0e0e;
+    color: #fff;
+}
+.footer a{
+    background-color: #fff;
+}
+
+.ham{
+    position: absolute;
+    right: 4px;
+    top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        transform: translatey(-200px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ham{
+        display: none;
+    }
+}
+
